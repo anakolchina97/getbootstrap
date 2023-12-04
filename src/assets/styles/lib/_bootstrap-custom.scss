@@ -1,0 +1,29 @@
+.carousel {
+	height: 410px;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: top;
+	}
+}
+
+#news-slider {
+	* {
+		height: 100%;
+	}
+}
+
+.display-7 {
+	font-size: 2rem;
+}
+
+.display-9 {
+	font-size: 1.375rem;
+}
+
+@for $i from 1 through 10 {
+	.display-#{$i} {
+		font-family: var(--ff-bebas);
+	}
+}

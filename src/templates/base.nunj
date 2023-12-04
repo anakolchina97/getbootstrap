@@ -1,0 +1,38 @@
+
+{% from "./_head-scripts.nunj" import headScripts %}
+<!DOCTYPE html>
+<html class="page" lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<title>{% block title %}Bootstrap 5. Education{% endblock %}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="description" content="Подарите себе скидку до 300 рублей баллами на каждую покупку с сервисом Пакет, а еще бесплатные доставки и другие бонусы от партнеров!">
+
+		<link rel="icon" href="/favicon.ico" sizes="32x32">
+		<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		{{ headScripts() }}
+
+		<link rel="preload" href="/assets/fonts/Bebas-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="/assets/fonts/Bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
+
+		{% block stylesheets %}
+			<link rel="stylesheet" href="assets/css/styles.css?hash" />
+		{% endblock stylesheets %}
+	</head>
+	<body class="page__body">
+
+		<div class="page__wrapper wrapper">
+			<main class="page__main">
+			{% block content %}
+			{% endblock content %}
+			</main>
+		</div>
+
+		{% block scripts %}
+			<script src="assets/js/bundle.js?hash"></script>
+		{% endblock scripts %}
+	</body>
+</html>

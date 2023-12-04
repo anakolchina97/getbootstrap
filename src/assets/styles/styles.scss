@@ -1,0 +1,27 @@
+// ======= GLOBAL =======\
+@import 'lib/base';
+
+// ======= BOOTSTRAP =======\
+@import 'lib/bootstrap-constant';
+@import 'node_modules/bootstrap/scss/bootstrap';
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons';
+@import 'lib/bootstrap-custom';
+
+// ======= SWIPER =======\
+@import 'node_modules/swiper/swiper';
+
+@import 'constants';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'layout';
+@import 'typography';
+
+// ======= COMPONENTS =======
+@import '../../components/button/button';
+
+// ======= INCLUDES =======
+@import '../../includes/header/header';
+
+// ======= PAGES =======
+@import 'pages/main';

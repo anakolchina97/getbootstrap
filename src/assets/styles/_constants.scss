@@ -1,0 +1,54 @@
+@import './lib/mixins';
+
+$default-transition-duration: 0.4s;
+$fast-transition-duration: 0.17s;
+$default-transition-function: ease-out;
+
+// ======= BREAKPOINTS =======
+$desktop: 1920px;
+$desktop-md: 1440px;
+$laptop-md: 1280px;
+$laptop-md-2: 1150px;
+$laptop: 1024px;
+$laptop-sm: 992px;
+$tablet: 768px;
+$mobile-only: 767px;
+$mobile-lg: 640px;
+$mobile-lg-2: 560px;
+$mobile-md: 425px;
+$mobile: 375px;
+$mobile-sm: 374px;
+
+// ======= COLORS =======
+$white: #fff;
+$black: #000;
+$red: #ca0000;
+
+$primary-typography: #111;
+
+:root {
+	// ======= FONTS =======
+	--ff-bebas: 'Bebas', 'Arial', sans-serif;
+	--ff-raleway: 'Raleway', 'Arial', sans-serif;
+
+	// ======= COLORS =======
+	--white: #{$white};
+	--black: #{$black};
+	--bg-red: #{$red};
+
+	--primary-typography: #{$primary-typography};
+
+	// ======= DEFAULTS =======
+	--default-font-family: var(--ff-raleway);
+	--default-font-size: 1.25rem; // 20px
+	--default-line-height: 1.35;
+	--default-font-weight: 500;
+	--default-text-color: var(--black);
+	--default-bg-color: var(--white);
+
+	// === Bootstrap ===
+	--bs-nav-link-color: var(--primary-typography);
+	--bs-primary-rgb: 237, 30, 38;
+	--bs-secondary-rgb: 237, 237, 237;
+	--bs-light-rgb: 134, 134, 134;
+}

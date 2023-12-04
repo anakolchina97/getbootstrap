@@ -1,0 +1,13 @@
+{% macro button(props) %}
+
+{% if props.href %}
+<a class="button{% if props.className %} {{ props.className }}{% endif %}" href="{{ props.href }}"{% if props.attr %} {{ props.attr }}{% endif %}>
+	{{ props.text }}
+</a>
+{% else %}
+<button class="button{% if props.className %} {{ props.className }}{% endif %}" type="button"{% if props.attr %} {{ props.attr }}{% endif %}>
+	{{ props.text }}
+</button>
+{% endif %}
+
+{% endmacro %}

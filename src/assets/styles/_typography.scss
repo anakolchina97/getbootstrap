@@ -1,0 +1,26 @@
+.h1 {
+	font: var(--font-h1);
+	letter-spacing: -0.5px;
+	@media (max-width: $laptop-md-2) {
+		font: var(--font-h3-mobile);
+	}
+}
+
+.h3 {
+	font: var(--font-h3);
+	letter-spacing: -0.5px;
+	@media (max-width: $laptop-md-2) {
+		font: var(--font-h4-mobile);
+	}
+}
+
+.text-lg {
+	font: var(--font-lg);
+	@media (max-width: $laptop-md-2) {
+		font: var(--font-lg-mobile);
+	}
+}
+
+.text-xs {
+	font: var(--font-xs);
+}

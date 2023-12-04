@@ -1,0 +1,61 @@
+{% from "../../components/icon/icon.nunj" import icon %}
+
+{% set links = [
+	{
+		href: "#",
+		text: "Компания"
+	},
+	{
+		href: "#",
+		text: "Сотрудничество"
+	},
+	{
+		href: "#",
+		text: "Обслуживание"
+	},
+	{
+		href: "#",
+		text: "Гос. учреждениям"
+	},
+	{
+		href: "#",
+		text: "Гос. учреждениям"
+	}
+] %}
+
+<nav class="navbar navbar-expand-lg rounded-4 bg-white">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand" href="#">
+			{{ icon({
+				iconName: 'logo',
+				className: 'button__icon',
+				attr: 'width="154" height="58"'
+			})}}
+		</a>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active fs-6 px-4" aria-current="page" href="#"></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Сотрудничество</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Обслуживание</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Гос. учреждениям</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Проектировщикам</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Шелби Лаб</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link fs-6" href="#">Контакты</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

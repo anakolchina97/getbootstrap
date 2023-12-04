@@ -1,0 +1,25 @@
+{% macro card(props) %}
+	<article class="card rounded-4 overflow-hidden bg-secondary border-0">
+		<div>
+			<img class="img-fluid" src="/assets/images/cards/card-item-1.jpg" />
+		</div>
+		<div class="px-3 py-3">
+			<div class="d-flex justify-content-between">
+				<div class="">Звезды</div>
+				<p class="h5">5 отзывов</p>
+			</div>
+			<h3 class="display-7 mb-3">Накладка Avalox HORME 30</h3>
+			<div class="d-flex gap-2 mb-5">
+				<div class="">1</div>
+				<div class="">2</div>
+			</div>
+			<button type="button" class="btn btn-danger btn-lg d-flex align-items-center gap-3">
+				<i class="bi bi-cart3 fs-3"></i>
+				<div class="bg-white d-flex align-items-center rounded-3 gap-2 px-2">
+					<p class="display-9 text-light mb-0 text-decoration-line-through">5430₽</p>
+					<p class="display-7 text-danger mb-0">3750₽</p>
+				</div>
+			</button>
+		</div>
+	</article>
+{% endmacro %}
