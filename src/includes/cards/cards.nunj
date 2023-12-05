@@ -4,7 +4,7 @@
 	<header class="d-flex">
 		<h2 class="display-5">Наши новинки</h2>
 	</header>
-	<div class="swiper">
+	<div class="swiper" data-slider-cards>
 		<div class="swiper-wrapper">
 			<div class="swiper-slide">
 				{{card({})}}

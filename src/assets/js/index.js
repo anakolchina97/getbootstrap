@@ -20,6 +20,7 @@ class Saurs {
 		};
 		this.components = {
 			Cards: require('../../includes/cards/cards').default,
+			Hero: require('../../includes/hero/hero').default,
 		};
 		this.helpers = {};
 		this.modules = {};

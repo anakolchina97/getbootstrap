@@ -1,0 +1,8 @@
+{% extends "../templates/base.nunj" %}
+
+{% block content %}
+	<div class="container">
+		{% include "../includes/hero/hero.nunj" %}
+		{% include "../includes/cards/cards.nunj" %}
+	</div>
+{% endblock %}

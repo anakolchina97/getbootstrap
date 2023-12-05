@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-lg-6 pb-5 d-flex flex-column align-items-start">
+		<p class="display-5 text-white text-uppercase fw-bold">Подборки от наших экспертов</p>
+		<div class="row flex-nowrap text-white">
+			<div class="col-lg-4">
+				<i class="d-block rounded-4 bg-secondary bg-opacity-50 mb-3">
+					<img class="img-fluid" src="/assets/images/hero/hero-item-1.png" />
+				</i>
+				<p class="h6">Какие мячи выбрать к этой ракетке?</p>
+			</div>
+			<div class="col-lg-4">
+				<i class="d-block rounded-4 bg-secondary bg-opacity-50 mb-3">
+					<img class="img-fluid" src="/assets/images/hero/hero-item-2.png" />
+				</i>
+				<p class="h6">Хорошо ли будут сочетаться это основание и накладки?</p>
+			</div>
+			<div class="col-lg-4">
+				<i class="d-block rounded-4 bg-secondary bg-opacity-50 mb-3">
+					<img class="img-fluid" src="/assets/images/hero/hero-item-3.png" />
+				</i>
+				<p class="h6">Готовые подборки от&nbsp;профессионалов настольного тенниса!</p>
+			</div>
+		</div>
+		<button type="button" class="btn btn-light btn-lg mt-auto">
+			<span class="display-7">смотреть подборки</span>
+		</button>
+	</div>
+	<div class="col-lg-6 d-flex flex-column align-items-center">
+		<img class="img-fluid mt-auto" src="/assets/images/hero/hero-boy.png" width="400" />
+	</div>
+</div>
