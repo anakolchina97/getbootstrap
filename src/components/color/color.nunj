@@ -1,0 +1,11 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro color(args) %}
+	<div class="d-flex gap-2 align-items-center">
+		{{ icon({
+			iconName: 'red',
+			attr: 'width="22" height="22"'
+		})}}
+		<div class="fs-6">max</div>
+	</div>
+{% endmacro %}

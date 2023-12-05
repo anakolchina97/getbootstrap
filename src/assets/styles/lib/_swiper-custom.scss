@@ -1,7 +1,7 @@
 .swiper-pagination {
-	position: absolute;
-	top: 0;
-	right: 0;
+	// position: absolute;
+	// top: 0;
+	// right: 0;
 	display: flex;
 	gap: rem(8);
 }
@@ -23,5 +23,15 @@
 	--size: #{rem(30)};
 	width: var(--size);
 	height: var(--size);
-	background: red;
+	background: transparent;
+	svg {
+		fill: transparent;
+		stroke: var(--white);
+	}
+}
+
+.swiper-button-next {
+	svg {
+		transform: scale(-1, 1);
+	}
 }
