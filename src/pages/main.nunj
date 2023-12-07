@@ -1,8 +1,18 @@
 {% extends "../templates/base.nunj" %}
+{% from "../components/cards/cards.nunj" import cards %}
+
+{% set news = [
+	{
+		img: ""
+
+	}
+] %}
 
 {% block content %}
 	<div class="container">
 		{% include "../includes/hero/hero.nunj" %}
-		{% include "../includes/cards/cards.nunj" %}
+		{{cards({
+			title: "Наши новинки"
+		})}}
 	</div>
 {% endblock %}

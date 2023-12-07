@@ -19,7 +19,7 @@ class Saurs {
 			// Signal: require('./classes/Signal').default,
 		};
 		this.components = {
-			Cards: require('../../includes/cards/cards').default,
+			Cards: require('../../components/cards/cards').default,
 			Hero: require('../../includes/hero/hero').default,
 		};
 		this.helpers = {};

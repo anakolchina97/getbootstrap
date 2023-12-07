@@ -1,0 +1,42 @@
+{% from "../../components/card/card.nunj" import card %}
+
+{% macro cards(props) %}
+	<section class="cards">
+		<header class="d-flex">
+			<h2 class="display-5">{{ props.title }}</h2>
+		</header>
+		<div class="swiper" data-slider-cards>
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					{{card({
+						src: "/assets/images/cards/card-item-1.jpg",
+						title: "Накладка Avalox HORME 30",
+						feedbackCount: 5,
+						ratingFull: 4,
+						ratingEmpty: 1,
+						colors: [
+							{
+								color: 'red',
+								text: 'max',
+								active: true
+							},
+							{
+								color: 'black',
+								text: 'max'
+							}
+						],
+						priceOld: '5430',
+						priceNew: '3750'
+					})}}
+				</div>
+				<div class="swiper-slide">
+					Slide 2
+				</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 3</div>
+			</div>
+		</div>
+	</section>
+{% endmacro %}

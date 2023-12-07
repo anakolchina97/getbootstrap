@@ -7,6 +7,5 @@
 		{% include "../includes/pagination/pagination.nunj" %}
 		{% include "../includes/tabs/tabs.nunj" %}
 		{% include "../includes/hero/hero.nunj" %}
-		{% include "../includes/cards/cards.nunj" %}
 	</div>
 {% endblock %}
