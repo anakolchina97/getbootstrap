@@ -1,0 +1,16 @@
+{% from "../icon/icon.nunj" import icon %}
+
+{% macro star(props) %}
+	{% for i in range(1, props.full) %}
+		{{ icon({
+			iconName: 'star-full',
+			attr: 'width="19" height="18"'
+		})}}
+	{% endfor %}
+	{% for i in range(1, props.empty) %}
+		{{ icon({
+			iconName: 'star-empty',
+			attr: 'width="19" height="18"'
+		})}}
+	{% endfor %}
+{% endmacro %}
