@@ -12,8 +12,15 @@
 			</div>
 			<h3 class="display-7 mb-3">Накладка Avalox HORME 30</h3>
 			<div class="d-flex gap-2 mb-5">
-				{{color({})}}
-				<div class="">2</div>
+				{{color({
+					color: 'red',
+					text: 'max',
+					active: true
+				})}}
+				{{color({
+					color: 'black',
+					text: 'max'
+				})}}
 			</div>
 			<button type="button" class="btn btn-danger btn-lg d-flex align-items-center gap-3">
 				<i class="bi bi-cart3 fs-3"></i>

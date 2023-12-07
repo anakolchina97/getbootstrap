@@ -1,11 +1,11 @@
 {% from "../icon/icon.nunj" import icon %}
 
-{% macro color(args) %}
-	<div class="d-flex gap-2 align-items-center">
+{% macro color(props) %}
+	<div class="d-flex gap-2 align-items-center rounded-3 bg-white px-2 py-1{% if props.active %} border border-2 border-black{% endif %}">
 		{{ icon({
-			iconName: 'red',
+			iconName: props.color,
 			attr: 'width="22" height="22"'
 		})}}
-		<div class="fs-6">max</div>
+		<div class="fs-6">{{ props.text }}</div>
 	</div>
 {% endmacro %}
