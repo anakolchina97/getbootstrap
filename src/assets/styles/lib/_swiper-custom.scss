@@ -1,7 +1,4 @@
 .swiper-pagination {
-	// position: absolute;
-	// top: 0;
-	// right: 0;
 	display: flex;
 	gap: rem(8);
 }
@@ -28,6 +25,10 @@
 		fill: transparent;
 		stroke: var(--white);
 	}
+}
+
+.swiper-slide {
+	height: initial;
 }
 
 .swiper-button-next {

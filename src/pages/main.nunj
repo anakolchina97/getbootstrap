@@ -3,8 +3,99 @@
 
 {% set news = [
 	{
-		img: ""
+		src: "/assets/images/cards/card-item-1.jpg",
+		title: "Накладка Avalox HORME 30",
+		feedbackCount: 5,
+		ratingFull: 4,
+		ratingEmpty: 1,
+		colors: [
+			{
+				color: 'red',
+				text: 'max',
+				active: true
+			},
+			{
+				color: 'black',
+				text: 'max'
+			}
+		],
+		priceOld: '5430',
+		priceNew: '3750'
 
+	},
+	{
+		src: "/assets/images/cards/card-item-2.png",
+		title: "Накладка Victas V>20 DOUBLE EXTRA",
+		feedbackCount: 25,
+		ratingFull: 5,
+		colors: [
+			{
+				color: 'red',
+				text: '2мм',
+				active: true
+			},
+			{
+				color: 'black',
+				text: '2мм'
+			},
+			{
+				color: 'red',
+				text: 'max',
+				active: true
+			},
+			{
+				color: 'black',
+				text: 'max'
+			}
+		],
+		priceNew: '3750'
+	},
+	{
+		src: "/assets/images/cards/card-item-1.jpg",
+		title: "Накладка Avalox HORME 30",
+		feedbackCount: 5,
+		ratingFull: 4,
+		ratingEmpty: 1,
+		colors: [
+			{
+				color: 'red',
+				text: 'max',
+				active: true
+			},
+			{
+				color: 'black',
+				text: 'max'
+			}
+		],
+		priceOld: '5430',
+		priceNew: '3750'
+	},
+	{
+		src: "/assets/images/cards/card-item-2.png",
+		title: "Накладка Victas V>20 DOUBLE EXTRA",
+		feedbackCount: 25,
+		ratingFull: 5,
+		colors: [
+			{
+				color: 'red',
+				text: '2мм',
+				active: true
+			},
+			{
+				color: 'black',
+				text: '2мм'
+			},
+			{
+				color: 'red',
+				text: 'max',
+				active: true
+			},
+			{
+				color: 'black',
+				text: 'max'
+			}
+		],
+		priceNew: '3750'
 	}
 ] %}
 
@@ -12,7 +103,8 @@
 	<div class="container">
 		{% include "../includes/hero/hero.nunj" %}
 		{{cards({
-			title: "Наши новинки"
+			title: "Наши новинки",
+			cardsArray: news
 		})}}
 	</div>
 {% endblock %}
